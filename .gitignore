@@ -1,0 +1,42 @@
+# .NET Build artifacts
+bin/
+obj/
+**/bin/
+**/obj/
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Database files
+*.db
+*.db-shm
+*.db-wal
+
+# Frontend dependencies and build output
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+secrets.json
+appsettings.*.local.json
+
+# IDE / Editor artifacts
+.idea/
+.vscode/
+*.swp
+*~
+
+# Operating System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Bundle files
+*.bundle
