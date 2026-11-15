@@ -60,6 +60,13 @@ builder.Services.AddOpenApi(options =>
 
 var app = builder.Build();
 
+// Database Seeding & Migration
+using (var scope = app.Services.CreateScope())
+{
+    var dbContext = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+    DbSeeder.Seed(dbContext);
+}
+
 // HTTP request pipeline
 app.UseCors("AllowFrontend");
 
