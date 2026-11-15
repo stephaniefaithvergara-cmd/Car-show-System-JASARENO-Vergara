@@ -12,8 +12,9 @@ import RegistrationFilters from "../components/RegistrationFilters";
 import RegistrationTable from "../components/RegistrationTable";
 import Pagination from "../components/Pagination";
 
-// Active data provider: Sample data (will switch to registrationsApi in Commit 10)
-import { getRegistrations, getSummary } from "../api/sample-data";
+// Active data provider: Connected to C# .NET Minimal API (http://localhost:5205)
+// To toggle to sample data, switch import to: from "../api/sample-data"
+import { getRegistrations, getSummary } from "../api/registrationsApi";
 
 /**
  * Main Registrations Dashboard Page
